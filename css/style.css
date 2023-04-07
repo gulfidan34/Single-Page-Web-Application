@@ -1,0 +1,680 @@
+ body{
+    padding: 0;
+    margin: 0;
+    font-family: Lato,'Helvetica Neue',Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    background-image: url('../Hot-Dog.jpg') !important;
+   
+    
+}
+
+h1,h2,h3,h4,h5,h6
+{
+    margin-top: 20px;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    
+}
+
+.container
+{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.clear
+{
+   clear: both;
+}
+
+
+/* navigation */
+
+#nav-container
+{
+    height: 100px;
+    background-color: #2C3E50;
+}
+
+#nav-inner
+{
+    font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    height: 100px;   
+    width: 90%;
+    margin-left: 1px;
+}
+
+#logo
+{
+    float: left;
+    font-size: 1.5em;
+    margin:30px 10px;
+    padding-bottom: 23px;
+    padding-top: 23px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+#logomusic
+{
+    float: left;
+    font-size: 1.5em;
+    margin:10px 10px;
+    padding-bottom: 23px;
+    padding-top: 23px;
+    -webkit-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+button{
+    width: 150px;
+    height: 32px;
+    color: white;
+    background: rgb(2,0,36);
+    background: -moz-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(117,9,121,1) 35%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#020024",endColorstr="#00d4ff",GradientType=1);
+    border-radius: 10px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+
+}
+
+#logo a button:hover
+{
+    color:white;
+    background: rgb(238,174,202);
+    background: radial-gradient(circle, rgba(238,174,202,0.873392227984944) 0%, rgba(226,233,148,1) 100%);
+}
+
+/*= /logo=*/
+
+
+#nav-menu
+{
+    float: right;
+    margin-right: 1px;
+    
+}
+
+#nav-inner a
+{
+    color: #fff;
+    margin-right: 1px;
+    font-weight: 700;
+    text-decoration: none;
+    text-transform: uppercase;
+    
+}
+
+#nav-menu li
+{
+    display: inline-block;
+    list-style: none;
+    margin-top: 10px;
+    margin-right: 1px;
+    
+}
+
+
+#nav-menu li a{
+    letter-spacing: 3px;
+    margin-right: 1px;
+}
+
+    #nav-menu li a:hover{
+    color:#18BC9C;
+}
+            
+
+
+/* header */
+
+#header
+{    
+    text-align: center;
+    color: #fff;
+    
+}
+
+#header h1
+{
+    font-size: 4.75em;  
+    color: black; 
+}
+
+.star-line
+{
+    border: none;
+    border-top: solid 5px;
+    max-width: 250px;
+    margin-top: 40px;
+    color: black;
+    overflow: hidden;
+    align-items: center;
+}
+
+.star-line:after
+{   
+    font-family: FontAwesome;
+    content: "\f005";
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -17px;
+    font-size: 30px;
+    background-color:#2C3E50;
+    padding: 10px;
+
+}
+
+.star-line-white:after
+{  
+    background-color:black;
+    color: #fff;
+}
+
+
+.star-line-green:after
+{  
+    background-color: #fff;
+    color: #2C3E50;
+}
+
+#header span
+
+{
+    font-size: 25px;
+    
+}
+
+
+#header .container
+{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#header-inner img{
+    height: 50%;
+    width: 50%;
+    border-radius:20%;
+
+}
+
+
+#myImg {
+border-radius: 5px;
+cursor: pointer;
+transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+display: none; /* Hidden by default */
+position: fixed; /* Stay in place */
+z-index: 1; /* Sit on top */
+padding-top: 100px; /* Location of the box */
+left: 0;
+top: 0;
+width: 100%; /* Full width */
+height: 100%; /* Full height */
+overflow: auto; /* Enable scroll if needed */
+background-color: rgb(0,0,0); /* Fallback color */
+background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+margin: auto;
+display: block;
+width: 80%;
+max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+margin: auto;
+display: block;
+width: 80%;
+max-width: 700px;
+text-align: center;
+color: #ccc;
+padding: 10px 0;
+height: 150px;
+font-size: large;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+-webkit-animation-name: zoom;
+-webkit-animation-duration: 0.6s;
+animation-name: zoom;
+animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+from {-webkit-transform:scale(0)} 
+to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+from {transform:scale(0)} 
+to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+position: absolute;
+top: 15px;
+right: 35px;
+color: #f1f1f1;
+font-size: 40px;
+font-weight: bold;
+transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+color: #bbb;
+text-decoration: none;
+cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+.modal-content {
+    width: 100%;
+}
+}
+
+/* Event */
+
+.containerevent {
+    width: 100%;
+    height: 100vh;
+    background-color: #12121f;
+    color: #eee;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .calendar {
+    width: 45rem;
+    height: 52rem;
+    background-color: #222227;
+    box-shadow: 0 0.5rem 3rem rgba(0, 0, 0, 0.4);
+  }
+  
+  .month {
+    width: 100%;
+    height: 12rem;
+    background-color: #167e56;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    text-align: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+  
+  .month i {
+    font-size: 2.5rem;
+    cursor: pointer;
+  }
+  
+  .month h1 {
+    font-size: 3rem;
+    font-weight: 400;
+    text-transform: uppercase;
+    letter-spacing: 0.2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .month p {
+    font-size: 1.6rem;
+  }
+  
+  .weekdays {
+    width: 100%;
+    height: 5rem;
+    padding: 0 0.4rem;
+    display: flex;
+    align-items: center;
+  }
+  
+  .weekdays div {
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.1rem;
+    width: calc(44.2rem / 7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+  }
+  
+  .days {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0.2rem;
+  }
+  
+  .days div {
+    font-size: 1.4rem;
+    margin: 0.3rem;
+    width: calc(40.2rem / 7);
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-shadow: 0 0.3rem 0.5rem rgba(0, 0, 0, 0.5);
+    transition: background-color 0.2s;
+  }
+  
+  .days div:hover:not(.today) {
+    background-color: #262626;
+    border: 0.2rem solid #777;
+    cursor: pointer;
+  }
+  
+  .prev-date,
+  .next-date {
+    opacity: 0.5;
+  }
+  
+  .today {
+    background-color: #167e56;
+  }
+/* Content */
+
+
+#content
+{
+    padding-top: 100px;
+    text-align: center;
+}
+
+
+#content h2
+{
+    font-size: 40px;
+    color: #2C3E50;
+}
+#contentevent
+{
+    padding-top: 100px;
+    text-align: center;
+}
+
+#content h3
+{
+    font-size: 40px;
+    color: #2C3E50;
+    
+}
+
+.portfolio-item
+{
+    width: 32%;
+    float: left;
+    background-color: white;
+    margin-right: 1.3%;
+    margin-top: 15px;
+}
+
+.portfolio-item img
+{
+    width: 350px;
+    height: 300px;
+}
+
+.portfolio-item a
+{
+    display: block;
+    position: relative;
+    
+}
+
+.caption{
+    background-color: #18BC9C;
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+}
+
+.caption:hover{   
+    opacity: 0.9;
+}
+
+.caption-content
+{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    color: #fff;
+    font-size: 20px;
+    margin-top: -15px;
+}
+
+/* Footer */
+
+#mission
+{
+    background-color:rgb(118, 24, 24);
+    padding:100px 0;
+    margin-top: 100px;
+    text-align: center;
+    color: #fff;
+}
+
+#mission h2
+{
+    font-size: 40px;
+    color: #fff;
+}
+
+
+#mission p
+{
+    -webkit-column-count:2;
+    text-align: left;
+    padding: 0 20%;
+    font-size: 20px;
+    line-height: 1.42;
+}
+
+
+#btn
+{
+    color:#fff;
+    border: 2px solid #fff;
+    font-size: 20px;
+    padding: 10px 15px;
+    background-color: transparent;
+    border-radius: 6px; 
+    display: inline-block;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+#btn:hover
+{
+    background-color: #fff;
+    color: #18BC9C;
+}
+
+
+
+/* contact */
+
+#contact
+{
+    padding: 100px 0;
+    text-align: center;
+}
+
+
+#contact h2
+{
+    font-size: 40px;
+}
+
+#form
+{
+    width: 60%;   
+    margin: 0 auto;
+}
+
+*
+{
+    box-sizing: border-box;
+}
+
+
+input[type="text"],textarea
+{
+    width: 100%; 
+    border: none;
+    border-top:1px solid #eee; 
+    padding: 6px 12px;
+    height: 34px;
+    font-size: 1.5em;
+    color: #12121f;
+}
+.form-group
+{
+    margin-top: 30px;
+}
+
+textarea
+{
+    height: auto;
+    border-bottom:1px solid #eee; 
+}
+
+#sendBtn
+{    
+    background-color: rgb(33, 27, 27);
+    color: #fff;
+    border-radius: 5px;
+    border:none;
+    padding: 10px 16px;
+    cursor: pointer;
+    float: left;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.42;
+}
+
+#sendBtn:hover
+{ 
+ background-color: red;
+}
+
+
+#footer
+{
+    text-align: center;
+    color: #fff;
+}
+
+
+#footer-top
+{
+    background-color: #2C3E50;
+    padding-top: 50px;
+}
+
+
+#footer-bottom
+{
+    background-color: #233140;
+    padding: 15px 0;
+}
+
+.footer-col
+{
+    width: 33%;
+   display: inline-block;
+    margin-bottom: 50px;
+}
+
+h3
+{
+    font-size: 24px;
+    margin-bottom: 30px; 
+}
+
+#footer ul
+{
+    margin: 0;
+    padding: 0;
+    
+}
+
+#footer ul li
+{
+    display: inline-block;   
+    margin-right: 7px;
+    list-style: none;
+}
+
+.btn-social{
+    display: inline-block; 
+    width: 50px;
+    height: 50px;
+    border: 2px solid #fff;
+    border-radius: 100%;
+    font-size: 25px;
+    line-height: 45px;
+    
+}
+
+.btn-social:hover{
+    color:black;
+    background-color:white;
+}
+
+#footer p
+{
+    font-size: 19px;
+}
+
+#footer p a
+{
+    color: #19AC78;
+    text-decoration: none;
+}
+
+#footer p a:hover
+{
+    text-decoration: underline;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
