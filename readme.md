@@ -1,5 +1,5 @@
 
-_Italic text here_
+
 **FreeHotParty Website**
 This is a website I created using HTML and CSS for FreeHotParty, an initiative to promote the act of giving back to society. Our mission is to encourage individuals and organizations to contribute to society by giving away free hot dogs, with the belief that if everyone gives away something, life can be made better.
 
